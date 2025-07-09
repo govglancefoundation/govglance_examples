@@ -71,29 +71,52 @@ https://api.govglance.org/posts/recent?limit=10&skip=0&schema=united_states_of_a
 The response data is returned as a JSON object with the following structure:
 
 ```json
-{
-  "data": [
+ [
     {
-      "id": 1,
-      "bill_number": "13",
-      "title": "Example Bill Title",
-      "action_date": "2025-07-09",
-      "summary": "A brief summary of the bill.",
-      "status": "Passed"
+      "package_id": "BILLS-119hr3062rh",
+      "congress": "119",
+      "bill_number": "3062",
+      "title": "Promoting Cross-Border Energy Infrastructure Act",
+      "long_title": "To Establish A More Uniform, Transparent, And Modern Process To Authorize The Construction, Connection, Operation, And Maintenance Of International Border-Crossing Facilities For The Import And Export Of Oil And Natural Gas And The Transmission Of Electricity.",
+      "status": "Placed on the Union Calendar, Calendar No. 151.",
+      "action_date": "2025-07-02",
+      "url": "https://www.govinfo.gov/app/details/BILLS-119hr3062rh",
+      "sponsors": [
+        {
+          "name": "Ms. Fedorchak",
+          "party": "R",
+          "state": "ND"
+        },
+        {
+          "name": "Mr. Dunn of Florida",
+          "party": "R",
+          "state": "FL"
+        }
+      ]
     },
     {
-      "id": 2,
-      "bill_number": "14",
-      "title": "Another Bill Title",
-      "action_date": "2025-06-25",
-      "summary": "Another brief summary.",
-      "status": "Pending"
-    }
-  ],
-  "total": 100,
-  "limit": 10,
-  "skip": 0
-}
+      "package_id": "BILLS-119hr3898rh",
+      "congress": "119",
+      "bill_number": "3898",
+      "title": "Promoting Efficient Review For Modern Infrastructure Today Act",
+      "long_title": "To Amend The Federal Water Pollution Control Act To Make Targeted Reforms With Respect To Waters Of The United States And Other Matters, And For Other Purposes.",
+      "status": "Placed on the Union Calendar, Calendar No. 145.",
+      "action_date": "2025-07-02",
+      "url": "https://www.govinfo.gov/app/details/BILLS-119hr3898rh",
+      "sponsors": [
+        {
+          "name": "Mr. Collins",
+          "party": "R",
+          "state": "GA"
+        },
+        {
+          "name": "Mr. Graves",
+          "party": "R",
+          "state": "MO"
+        }
+      ]
+    
+
 ```
 
 ### Fields:
